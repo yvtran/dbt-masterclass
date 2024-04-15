@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: external__jaffle_shop
+    database: dbt-tutorial
+    schema: jaffle_shop
+    tables:
+      - name: customers
+
+models:
+  - name: stg_customers
+    description: "Staging view to retrive customers information."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+
+
