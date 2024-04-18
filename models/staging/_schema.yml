@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: external__jaffle_shop
-    database: dbt-tutorial
-    schema: jaffle_shop
+    database: avisia-training-dbt
+    schema: dbt_demo
     tables:
       - name: customers
 
