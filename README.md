@@ -22,6 +22,12 @@ dbt debug
 ```
 Le tag `success` devrait apparaitre en vert.
 
+Puis lancez la commande suivante :
+```shell
+dbt run
+```
+Constatez que les modèles sont créés sur BigQuery.
+
 > **_NOTE:_**  Lors de la création d'un projet data, dbt suggère de structurer son projet data en séparant les modèles en 3 niveaux:
 > * <u>staging</u>: preprocessing des données sources (renommage, filtrage simple...)
 > * <u>intermediate</u>: exploitation de vos modèles en staging pour créer une couche logique en vue de préparer sa donnée à l'exposition (jointure, aggrégation, intégration de vos besoins...)
